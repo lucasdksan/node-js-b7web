@@ -1,0 +1,27 @@
+{
+  "name": "js-b7web",
+  "version": "1.0.0",
+  "description": "Estudos Sobre Node Js da B7Web",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env --import=tsx --watch ./src/server.ts",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasdksan/node-js-b7web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasdksan/node-js-b7web/issues"
+  },
+  "homepage": "https://github.com/lucasdksan/node-js-b7web#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
