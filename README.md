@@ -24,3 +24,6 @@ Este repositório reúne os resultados dos estudos sobre Node.js, uma runtime qu
 
 * [B7Web](https://lp.b7web.com.br/curso-g)
 * [Chat-GPT](https://chatgpt.com/)
+
+* Manipulando erros
+* Middleware
