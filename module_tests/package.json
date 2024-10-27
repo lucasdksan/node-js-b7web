@@ -4,7 +4,6 @@
   "description": "Estudos Sobre Node Js da B7Web",
   "main": "server.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsnd --transpile-only --ignore-watch node_nodules --respawn src/server.ts",
     "build": "npm run clean && tsc",
     "clean": "rm -rf dist",
