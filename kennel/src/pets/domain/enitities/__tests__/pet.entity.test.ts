@@ -21,6 +21,4 @@ describe("Pet Entity unit test", ()=>{
         expect(sut.props.updatedAt).toBeUndefined();
         expect(sut.props.createdAt).toBeInstanceOf(Date);
     });
-
-    
 });
