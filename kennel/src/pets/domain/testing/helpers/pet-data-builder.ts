@@ -7,7 +7,7 @@ type Props = {
     color?: string;
     image?: string;
     createdAt?: Date;
-    updatedAt?: Date;
+    updatedAt?: Date | null;
 }
 
 export function PetDataBuilder(props: Props): PetProps {
