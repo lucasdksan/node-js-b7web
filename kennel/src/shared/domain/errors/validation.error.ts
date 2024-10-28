@@ -1,5 +1,7 @@
 import { ZodError } from "zod";
 
+export class ValidationError extends Error {}
+
 export class EntityValidationError extends Error {
     constructor(public error: ZodError<{
         race: string;
