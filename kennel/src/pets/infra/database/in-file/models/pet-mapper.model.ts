@@ -9,8 +9,8 @@ export class PetModelMapper {
             gender: model.gender,
             image: model.image,
             race: model.race,
-            createdAt: model.createdAt,
-            updatedAt: model.updatedAt
+            createdAt: typeof model.createdAt === "string" ? new Date(model.createdAt) : model.createdAt,
+            updatedAt: typeof model.updatedAt === "string" ? new Date(model.updatedAt) : model.updatedAt
         };
 
         try {

@@ -11,8 +11,9 @@ describe("Conection database", ()=>{
         PetDataBuilder({})
     ];
 
-    beforeAll(()=> {
+    beforeAll(async ()=> {
         db = new InFileDataBase<PetEntity>("./src/database/data.json");
+        await db.resetFile();
     });
 
     it("Connecting the database", ()=> {

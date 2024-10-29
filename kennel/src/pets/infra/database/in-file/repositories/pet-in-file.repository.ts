@@ -58,8 +58,7 @@ export class PetInFileRepository implements PetRepository.Repository {
 
 
         list[index] = {
-            ...entityJSON,
-            updatedAt: new Date()
+            ...entityJSON
         };
 
         await this.inFileDataBase.editFile(list);
