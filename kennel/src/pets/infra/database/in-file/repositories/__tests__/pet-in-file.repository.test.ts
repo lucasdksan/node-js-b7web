@@ -12,7 +12,7 @@ describe("Pet In File Repository unit test", ()=>{
 
     beforeAll(async ()=>{
         const props = PetDataBuilder({});
-        db = new InFileDataBase<PetDB>("./src/database/data.json");
+        db = new InFileDataBase<PetDB>("./src/database/tests/data-test-pet-in-file.json");
         sut = new PetInFileRepository(db);
         pet = new PetEntity(props);
 
@@ -31,7 +31,7 @@ describe("Pet In File Repository unit test", ()=>{
             ...pet.toJSON(),
             createdAt: pet.toJSON().createdAt.toISOString()
         };
-        const data = await readFile("./src/database/data.json", { encoding: "utf8" });
+        const data = await readFile("./src/database/tests/data-test-pet-in-file.json", { encoding: "utf8" });
         const jsonData = JSON.parse(data) as { db: PetDB[]; };
         const dataFind = jsonData.db.find(e => e.id === PEntity.id);
 
@@ -42,16 +42,12 @@ describe("Pet In File Repository unit test", ()=>{
         const arrPet = [
             new PetEntity(PetDataBuilder({})),
             new PetEntity(PetDataBuilder({})),
-            new PetEntity(PetDataBuilder({})),
-            new PetEntity(PetDataBuilder({})),
         ];
 
         const id = arrPet[0].id;
 
         await sut.insert(arrPet[0]);
         await sut.insert(arrPet[1]);
-        await sut.insert(arrPet[2]);
-        await sut.insert(arrPet[3]);
 
         const dataPet = await sut.findById(id);
 

@@ -18,7 +18,7 @@ export namespace ListPet {
             return output;
         }
 
-        async execute(input: null): Promise<Output> {
+        async execute(): Promise<Output> {
             const result = await this.petRepository.findAll();
         
             return this.toOutput(result);

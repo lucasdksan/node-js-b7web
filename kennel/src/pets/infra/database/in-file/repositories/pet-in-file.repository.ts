@@ -1,4 +1,4 @@
-import { PetEntity, PetProps } from "@/pets/domain/enitities/pet.entity";
+import { PetEntity } from "@/pets/domain/enitities/pet.entity";
 import { PetRepository } from "@/pets/domain/repositories/pet.repository";
 import { NotFoundError } from "@/shared/domain/errors/not-found.error";
 import { InFileDataBase } from "@/shared/infra/database/infile.database";
@@ -66,7 +66,7 @@ export class PetInFileRepository implements PetRepository.Repository {
 
     async delete(id: string): Promise<void> {
         const list = await this.getValues();
-
+        const _ = await this._get(id);
         const listUpdated = list.filter((pet) => pet.id !== id);
 
         await this.inFileDataBase.editFile(listUpdated);

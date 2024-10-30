@@ -12,7 +12,7 @@ describe("Conection database", ()=>{
     ];
 
     beforeAll(async ()=> {
-        db = new InFileDataBase<PetEntity>("./src/database/data.json");
+        db = new InFileDataBase<PetEntity>("./src/database/tests/data-test-infile.json");
         await db.resetFile();
     });
 
@@ -23,7 +23,7 @@ describe("Conection database", ()=>{
     it("Insert values in database file", async ()=>{
         await db.editFile(listPets);
 
-        const data = await readFile("./src/database/data.json", { encoding: "utf8" });
+        const data = await readFile("./src/database/tests/data-test-infile.json", { encoding: "utf8" });
         const jsonData = JSON.parse(data) as { db: PetProps[]; };
         const NewListPets = listPets.map((pet) => {
             let { color, gender, image, race, updatedAt, createdAt } = pet;

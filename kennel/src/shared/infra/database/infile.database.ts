@@ -9,6 +9,7 @@ export class InFileDataBase<P = any> {
 
     public async getFile(): Promise<P[]> {
         const data = await readFile(this.dataSource, { encoding: "utf8" });
+
         const jsonData = JSON.parse(data);
         
         return jsonData.db;
