@@ -26,7 +26,7 @@ export class PetInFileRepository implements PetRepository.Repository {
 
             return PetModelMapper.toEntity(pet);
         } catch (error) {
-            throw new NotFoundError(`UserModel not found using ID ${id}`);
+            throw new NotFoundError(`Entity not found`);
         }
     }
 

@@ -26,11 +26,9 @@ describe("DeletePet Usecase unit test", ()=> {
         await petRepo.insert(entity);
         await sut.execute({ id: entity.toJSON().id });
 
-        const len = await inFileDb.getFile();
-
-        console.log({ len: len.length === 0 })
+        const len = await inFileDb.getFile()
 
         expect(spyDelete).toHaveBeenCalledTimes(1);
-        // expect((await inFileDb.getFile()).length).toHaveLength(0);
+        expect(len).toHaveLength(0);
     });
 });

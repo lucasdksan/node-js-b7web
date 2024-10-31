@@ -7,6 +7,8 @@ const server = express();
 const env = new EnvConfig();
 const routes = new Routes(env);
 
+routes.execute();
+
 server.use(helmet());
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
