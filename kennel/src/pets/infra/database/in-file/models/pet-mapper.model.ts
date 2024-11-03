@@ -1,6 +1,6 @@
-import { PetEntity, PetProps } from "@/pets/domain/enitities/pet.entity";
+import { ValidationError } from "../../../../../shared/domain/errors/validation.error";
+import { PetEntity, PetProps } from "../../../../domain/enitities/pet.entity";
 import { PetDB } from "../dtos/pet-in-file.dto";
-import { ValidationError } from "@/shared/domain/errors/validation.error";
 
 export class PetModelMapper {
     static toEntity(model: PetDB){

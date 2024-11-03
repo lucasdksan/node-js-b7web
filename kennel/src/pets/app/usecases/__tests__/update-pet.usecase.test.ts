@@ -1,13 +1,13 @@
-import { InFileDataBase } from "@/shared/infra/database/infile.database";
 import { UpdatePet } from "../update-pet.usecase";
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { PetDB } from "@/pets/infra/database/in-file/dtos/pet-in-file.dto";
-import { PetInFileRepository } from "@/pets/infra/database/in-file/repositories/pet-in-file.repository";
-import { PetDataBuilder } from "@/pets/domain/testing/helpers/pet-data-builder";
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
 import { PetOutputMapper } from "../../dtos/pet.dto";
-import { NotFoundError } from "@/shared/domain/errors/not-found.error";
-import { BadRequestError } from "@/shared/app/errors/bad-request.error";
+import { InFileDataBase } from "../../../../shared/infra/database/infile.database";
+import { PetRepository } from "../../../domain/repositories/pet.repository";
+import { PetDB } from "../../../infra/database/in-file/dtos/pet-in-file.dto";
+import { PetInFileRepository } from "../../../infra/database/in-file/repositories/pet-in-file.repository";
+import { PetDataBuilder } from "../../../domain/testing/helpers/pet-data-builder";
+import { PetEntity } from "../../../domain/enitities/pet.entity";
+import { NotFoundError } from "../../../../shared/domain/errors/not-found.error";
+import { BadRequestError } from "../../../../shared/app/errors/bad-request.error";
 
 describe("UpdatePrt Usecase unit test", ()=>{
     let sut: UpdatePet.UseCase;

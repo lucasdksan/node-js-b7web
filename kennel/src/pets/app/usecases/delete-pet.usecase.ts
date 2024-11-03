@@ -1,5 +1,5 @@
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { UseCase as DefaultUseCase } from "@/shared/app/usecases/usecase";
+import { UseCase as DefaultUseCase } from "../../../shared/app/usecases/usecase";
+import { PetRepository } from "../../domain/repositories/pet.repository";
 
 export namespace DeletePet {
     export type Input = {

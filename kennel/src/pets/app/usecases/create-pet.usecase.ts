@@ -1,8 +1,8 @@
-import { UseCase as DefaultUseCase } from "@/shared/app/usecases/usecase";
+import { BadRequestError } from "../../../shared/app/errors/bad-request.error";
+import { UseCase as DefaultUseCase } from "../../../shared/app/usecases/usecase";
+import { PetEntity } from "../../domain/enitities/pet.entity";
+import { PetRepository } from "../../domain/repositories/pet.repository";
 import { PetOutput, PetOutputMapper } from "../dtos/pet.dto";
-import { BadRequestError } from "@/shared/app/errors/bad-request.error";
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
 
 export namespace CreatePet{
     export type Input = { 

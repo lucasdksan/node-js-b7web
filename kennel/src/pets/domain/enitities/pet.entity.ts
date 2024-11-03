@@ -1,6 +1,6 @@
-import { Entity } from "@/shared/domain/entities/entity";
+import { Entity } from "../../../shared/domain/entities/entity";
+import { EntityValidationError } from "../../../shared/domain/errors/validation.error";
 import { schema } from "./pet.schema";
-import { EntityValidationError } from "@/shared/domain/errors/validation.error";
 
 export type PetProps = {
     race: string;

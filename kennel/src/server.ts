@@ -14,6 +14,10 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 server.use(routes.router);
 
+server.get("/ping", (req, res)=> {
+    res.status(200).json({ pong: "ponggggggggggggggggggggggg" });
+});
+
 server.listen(env.getPort(), ()=> {
     console.log("server is working on the port: ", env.getPort());
 });

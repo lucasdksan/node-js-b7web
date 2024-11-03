@@ -1,6 +1,6 @@
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { BadRequestError } from "@/shared/app/errors/bad-request.error";
-import { UseCase as DefaultUseCase } from "@/shared/app/usecases/usecase";
+import { BadRequestError } from "../../../shared/app/errors/bad-request.error";
+import { UseCase as DefaultUseCase } from "../../../shared/app/usecases/usecase";
+import { PetRepository } from "../../domain/repositories/pet.repository";
 import { PetOutput, PetOutputMapper } from "../dtos/pet.dto";
 
 export namespace UpdatePet {

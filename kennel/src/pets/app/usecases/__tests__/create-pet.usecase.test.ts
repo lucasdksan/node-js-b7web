@@ -1,8 +1,8 @@
-import { InFileDataBase } from "@/shared/infra/database/infile.database";
+import { InFileDataBase } from "../../../../shared/infra/database/infile.database";
+import { PetRepository } from "../../../domain/repositories/pet.repository";
+import { PetDB } from "../../../infra/database/in-file/dtos/pet-in-file.dto";
+import { PetInFileRepository } from "../../../infra/database/in-file/repositories/pet-in-file.repository";
 import { CreatePet } from "../create-pet.usecase";
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { PetDB } from "@/pets/infra/database/in-file/dtos/pet-in-file.dto";
-import { PetInFileRepository } from "@/pets/infra/database/in-file/repositories/pet-in-file.repository";
 
 describe("CreatePet Usecase unit test", ()=>{
     let sut: CreatePet.UseCase;

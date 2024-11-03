@@ -1,7 +1,7 @@
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
-import { NotFoundError } from "@/shared/domain/errors/not-found.error";
-import { InFileDataBase } from "@/shared/infra/database/infile.database";
+import { PetRepository } from "../../../../domain/repositories/pet.repository";
+import { NotFoundError } from "../../../../../shared/domain/errors/not-found.error";
+import { InFileDataBase } from "../../../../../shared/infra/database/infile.database";
+import { PetEntity } from "../../../../domain/enitities/pet.entity";
 import { PetDB } from "../dtos/pet-in-file.dto";
 import { PetModelMapper } from "../models/pet-mapper.model";
 

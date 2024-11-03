@@ -1,6 +1,6 @@
-import { PetEntity, PetProps } from "@/pets/domain/enitities/pet.entity";
+import { PetEntity, PetProps } from "../../../../pets/domain/enitities/pet.entity";
+import { PetDataBuilder } from "../../../../pets/domain/testing/helpers/pet-data-builder";
 import { InFileDataBase } from "../infile.database";
-import { PetDataBuilder } from "@/pets/domain/testing/helpers/pet-data-builder";
 import { readFile } from "fs/promises";
 
 describe("Conection database", ()=>{

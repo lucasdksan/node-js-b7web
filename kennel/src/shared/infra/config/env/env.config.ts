@@ -10,8 +10,13 @@ export class EnvConfig implements IEnv {
         dotenv.config();
 
         this.config = schema.parse({
-            port: Number(process.env.PORT)
+            port: Number(process.env.PORT),
+            db: String(process.env.DB)
         });
+    }
+
+    getDB(): string {
+        return this.config.db;
     }
 
     getPort(): number {

@@ -1,7 +1,7 @@
-import { PetRepository } from "@/pets/domain/repositories/pet.repository";
 import { PetOutput, PetOutputMapper } from "../dtos/pet.dto";
-import { UseCase as DefaultUseCase } from "@/shared/app/usecases/usecase";
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
+import { UseCase as DefaultUseCase } from "../../../shared/app/usecases/usecase";
+import { PetRepository } from "../../domain/repositories/pet.repository";
+import { PetEntity } from "../../domain/enitities/pet.entity";
 
 export namespace GetPet {
     export type Input = {

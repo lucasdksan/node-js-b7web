@@ -1,9 +1,9 @@
-import { InFileDataBase } from "@/shared/infra/database/infile.database";
 import { PetInFileRepository } from "../pet-in-file.repository";
 import { PetDB } from "../../dtos/pet-in-file.dto";
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
-import { PetDataBuilder } from "@/pets/domain/testing/helpers/pet-data-builder";
 import { readFile } from "fs/promises";
+import { InFileDataBase } from "../../../../../../shared/infra/database/infile.database";
+import { PetEntity } from "../../../../../domain/enitities/pet.entity";
+import { PetDataBuilder } from "../../../../../domain/testing/helpers/pet-data-builder";
 
 describe("Pet In File Repository unit test", ()=>{
     let db: InFileDataBase;

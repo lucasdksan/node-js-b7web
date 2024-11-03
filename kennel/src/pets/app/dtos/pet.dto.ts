@@ -1,4 +1,4 @@
-import { PetEntity } from "@/pets/domain/enitities/pet.entity";
+import { PetEntity } from "../../domain/enitities/pet.entity";
 
 export type PetOutput = {
     id: string;
