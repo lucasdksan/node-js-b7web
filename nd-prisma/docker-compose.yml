@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    container_name: prisma
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=prisma
+    ports:
+      - '5432:5432'
+    volumes:
+      - .docker/dbdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U postgres -d goweb'",]
+      interval: 10s
+      timeout: 3s
+      retries: 3
