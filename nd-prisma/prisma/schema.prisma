@@ -8,9 +8,33 @@ datasource db {
 }
 
 model User {
-  id String @id @db.Uuid
-  name String @db.VarChar(255)
-  email String @unique @db.VarChar(255)
+  id         String   @id @db.Uuid
+  name       String   @db.VarChar(255)
+  email      String   @unique @db.VarChar(255)
+  status     Boolean  @default(true)
+  role       Role     @default(User)
+  password   String
+  posts      Post[]
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
 
   @@map("users")
+}
+
+model Post {
+  id         String   @id @db.Uuid
+  title      String
+  body       String
+  subtitle   String?
+  user_id    String   @db.Uuid
+  author     User     @relation(fields: [user_id], references: [id])
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("posts")
+}
+
+enum Role {
+  User
+  Admin
 }

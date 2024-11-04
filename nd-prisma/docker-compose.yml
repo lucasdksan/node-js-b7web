@@ -14,7 +14,7 @@ services:
     volumes:
       - .docker/dbdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "sh -c 'pg_isready -U postgres -d goweb'",]
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U postgres -d prisma'",]
       interval: 10s
       timeout: 3s
       retries: 3
