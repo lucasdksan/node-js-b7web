@@ -8,7 +8,11 @@ mainRouter.get('/ping', (req, res) => {
 });
 
 mainRouter.post("/user", async (req, res)=> {    
-    const user = await createUser("Lucas", "l@gmail.com", "123456789");
+    try {
+        const user = await createUser({ name: "Lucas", email: "l@gmail.com", password: "123456789" }); 
 
-    res.json({ user });
+        res.json({ user });
+    } catch (error) {
+        
+    }
 })
