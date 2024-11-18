@@ -14,6 +14,14 @@ Estudos Sobre Node Js da B7Web
     * [Módulos e CommonJS](/notes/fundamentals.md#módulos-e-commonjs)
     * [Módulos nativos do Node.js](/notes/fundamentals.md#módulos-nativos-do-nodejs)
     * [ESModules](/notes/fundamentals.md#esmodules)
+* [Middleware](/notes/middleware.md#middleware)
+    * [O que é um Middleware?](/notes/middleware.md#o-que-é-um-middleware)
+    * [Melhores Práticas](/notes/middleware.md#melhores-práticas)
+* [NoSQL](/notes/nosql.md#no-sql)
+    * [Principais Características do NoSQL](/notes/nosql.md#principais-características-do-nosql)
+    * [Para que é usado um banco de dados NoSQL?](/notes/nosql.md#para-que-é-usado-um-banco-de-dados-nosql)
+    * [Quando escolher um banco de dados NoSQL?](/notes/nosql.md#quando-escolher-um-banco-de-dados-nosql)
+    * [Quando não escolher um banco de dados NoSQL?](/notes/nosql.md#quando-não-escolher-um-banco-de-dados-nosql)
 * [Referências](#referências)
 
 ## Introdução
@@ -24,6 +32,3 @@ Este repositório reúne os resultados dos estudos sobre Node.js, uma runtime qu
 
 * [B7Web](https://lp.b7web.com.br/curso-g)
 * [Chat-GPT](https://chatgpt.com/)
-
-* Manipulando erros
-* Middleware
