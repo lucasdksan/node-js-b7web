@@ -22,6 +22,16 @@ Estudos Sobre Node Js da B7Web
     * [Para que é usado um banco de dados NoSQL?](/notes/nosql.md#para-que-é-usado-um-banco-de-dados-nosql)
     * [Quando escolher um banco de dados NoSQL?](/notes/nosql.md#quando-escolher-um-banco-de-dados-nosql)
     * [Quando não escolher um banco de dados NoSQL?](/notes/nosql.md#quando-não-escolher-um-banco-de-dados-nosql)
+* [MVC](/notes/mvc.md#mvc)
+    * [Model (Modelo)](/notes/mvc.md#model-modelo)
+    * [View (Visão)](/notes/mvc.md#view-visão)
+    * [Controller (Controlador)](/notes/mvc.md#controller-controlador)
+    * [Fluxo de Interação no MVC](/notes/mvc.md#fluxo-de-interação-no-mvc)
+    * [Benefícios do MVC](/notes/mvc.md#benefícios-do-mvc)
+* [Autenticação e Autorização](/notes/a_a.md#autenticação-e-autorização)
+    * [Autenticação](/notes/a_a.md#autenticação)
+    * [Autorização](/notes/a_a.md#autorização)
+    * [Boas práticas](/notes/a_a.md#boas-práticas)    
 * [Referências](#referências)
 
 ## Introdução
@@ -32,3 +42,4 @@ Este repositório reúne os resultados dos estudos sobre Node.js, uma runtime qu
 
 * [B7Web](https://lp.b7web.com.br/curso-g)
 * [Chat-GPT](https://chatgpt.com/)
+
