@@ -32,6 +32,9 @@ Estudos Sobre Node Js da B7Web
     * [Autenticação](/notes/a_a.md#autenticação)
     * [Autorização](/notes/a_a.md#autorização)
     * [Boas práticas](/notes/a_a.md#boas-práticas)    
+* [Upload e Download de Arquivos](/notes/upload.md#upload-e-download-de-arquivos)
+    * [Conceitos Fundamentais](/notes/upload.md#conceitos-fundamentais)
+    * [Boas Práticas](/notes/upload.md#boas-práticas)
 * [Referências](#referências)
 
 ## Introdução
@@ -42,4 +45,3 @@ Este repositório reúne os resultados dos estudos sobre Node.js, uma runtime qu
 
 * [B7Web](https://lp.b7web.com.br/curso-g)
 * [Chat-GPT](https://chatgpt.com/)
-
