@@ -36,6 +36,10 @@ Estudos Sobre Node Js da B7Web
     * [Conceitos Fundamentais](/notes/upload.md#conceitos-fundamentais)
     * [Boas Práticas](/notes/upload.md#boas-práticas)
 * [Socket Io](/notes/socket.md#socket-io)
+    * [Características principais do Socket.IO](/notes/socket.md#características-principais-do-socketio)
+    * [Como funciona o Socket.IO](/notes/socket.md#como-funciona-o-socketio)
+    * [Principais Métodos](/notes/socket.md#principais-métodos)
+    * [Casos de Uso](/notes/socket.md#casos-de-uso)
 * [Referências](#referências)
 
 ## Introdução
