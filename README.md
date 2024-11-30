@@ -35,6 +35,7 @@ Estudos Sobre Node Js da B7Web
 * [Upload e Download de Arquivos](/notes/upload.md#upload-e-download-de-arquivos)
     * [Conceitos Fundamentais](/notes/upload.md#conceitos-fundamentais)
     * [Boas Práticas](/notes/upload.md#boas-práticas)
+* [Socket Io](/notes/socket.md#socket-io)
 * [Referências](#referências)
 
 ## Introdução
