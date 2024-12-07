@@ -47,3 +47,45 @@ export const addEvent: RequestHandler = async (req, res, next) => {
 
     res.status(403).json({ error: "Ocorreu um erro!" });
 }
+
+export const updateEvent: RequestHandler = async (req, res, next) => {
+    const { id } = req.params;
+    const updateEventSchema = z.object({
+        status: z.boolean().optional(),
+        title: z.string().optional(),
+        description: z.string().optional(),
+        grouped: z.boolean().optional(),
+    });
+    const body = updateEventSchema.safeParse(req.body);
+
+    if(!body.success) {
+        res.status(403).json({ error: "Dados inválidos!" });
+        return;
+    }
+
+    const updateEvent = await events.update(parseInt(id), body.data);
+    
+    if(updateEvent) {
+        if(updateEvent.status) {
+
+        }
+        res.json({ event: updateEvent });
+        return;
+    }
+
+    res.status(403).json({ error: "Ocorreu um erro!" });
+    return;
+}
+
+export const deleteEvent: RequestHandler = async (req, res, next)=> {
+    const { id } = req.params;
+    const deleteEvent = await events.remove(parseInt(id));
+    
+    if(deleteEvent) {
+        res.json({ event: deleteEvent });
+        return;
+    }
+
+    res.status(403).json({ error: "Ocorreu um erro!" });
+    return;
+}
